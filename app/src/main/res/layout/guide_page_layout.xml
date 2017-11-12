@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.jeffrey.demo.guidedemo.NotouchLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/bg_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:focusable="false" />
+    </com.jeffrey.demo.guidedemo.NotouchLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/progress_bar_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:background="#80d7d7d7" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="1dp"
+                android:background="#80d7d7d7" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="1dp"
+                android:background="#80d7d7d7" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="1dp"
+                android:background="#80d7d7d7" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/progress_mark_view"
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@id/progress_bar_view"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:background="#80828282" />
+
+    </RelativeLayout>
+</FrameLayout>
